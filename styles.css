@@ -1,73 +1,118 @@
+#top
+{
+	text-align: center;
+	background-color: #deacf1;
+	width: 100%;
+}
+
+
 body
 	{
-	background-color: beige;
-	font-family: Arial, Helvetica, sans-serif;
+	background-color: black;
+	background-image: url("background.gif");
+	color:green;
+	font-family: 'Courier New', Courier, monospace;
 	}
 p
 	{
 	font-size: 20px;
 	}
+#sidenav
+	{
 
+		width: 200px;
+		padding: 20px;
+		position:fixed;
+		height: 100%;
+	}
+#sidenav ul 
+	{
+		display:flex;
+		padding: 0;
+		margin: 0;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		flex-grow: 0;
+		flex-shrink: 0;
+		border: 2px solid #BC13FE;
+	}
+#sidenav li{
+	padding: 10px;
+	list-style-type: none;
+	
+}
+#sidenav li a {
+	text-decoration: none;
+	font-weight: 700;
+	color: #BC13FE;
+}
+#sidenav ul a:hover{
+	background-color: #BC13FE;
+	color: black;
+
+}
+main 
+{
+	margin-left: 300px;
+}
 .container 
 	{
-	width: 90%; 
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: black;
 	}
 			
 img	
 	{
 	max-width: 100%;
+	padding:10px;
+	border:solid;
 	}
 
 figure
 	{
 	width: 45%;
 	min-width: 200px;
-	float: left;
+	float: right;
 	}
-
-@media screen and (max-width: 1000px) {
+header
+	{
+		background-image: url("blahajpink.png");
+		height: 300px
+	}
+@media only screen and (max-width: 800px) {
 	
-body
-	{
-	background-color: orange;
-	}
 
-p
+	#sidenav
 	{
-	font-size: 18px;
-	}
 
+		width: auto;	
+		height: 100%;
+		position:relative;
+	}
+#sidenav ul 
+	{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+		flex-grow: 1;
+		flex-shrink: 1;
+		border: 2px solid #BC13FE;
+
+
+	}
+main {
+	margin-left: auto;
 }
-
-
-
-@media only screen and (max-width : 480px) {
-	
-body
-	{
-	background-color: brown;
-	}
-	p
-	{
-	font-size: 16px;
-	}
-
+.core {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
-
-
-@media only screen and (max-width : 320px) {
-	
-body
-	{
-	background-color: red;
-	}
-	p
-	{
-	font-size: 13px;
-	}
-
 }
 
 
