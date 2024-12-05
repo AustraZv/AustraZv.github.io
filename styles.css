@@ -96,7 +96,7 @@ header
 	{
 		display:flex;
 		flex-direction: row;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		justify-content: space-evenly;
 		flex-grow: 1;
 		flex-shrink: 1;
@@ -105,13 +105,7 @@ header
 
 	}
 main {
-	margin-left: auto;
-}
-.core {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	margin-left: 0px;
 }
 }
 
