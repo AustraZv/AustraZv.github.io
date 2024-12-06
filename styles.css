@@ -17,13 +17,22 @@ p
 	{
 	font-size: 20px;
 	}
+.core{
+	display: flex;
+}
 #sidenav
 	{
-
-		width: 200px;
 		padding: 20px;
-		position:fixed;
 		height: 100%;
+		display:flex;
+		padding: 0;
+		margin: 0;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		flex-grow: 0;
+		flex-shrink: 0;
+		padding: 20px;
 	}
 #sidenav ul 
 	{
@@ -31,11 +40,12 @@ p
 		padding: 0;
 		margin: 0;
 		flex-direction: column;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		justify-content: flex-start;
 		flex-grow: 0;
 		flex-shrink: 0;
 		border: 2px solid #BC13FE;
+		width: 200px;
 	}
 #sidenav li{
 	padding: 10px;
@@ -52,10 +62,7 @@ p
 	color: black;
 
 }
-main 
-{
-	margin-left: 300px;
-}
+
 .container 
 	{
 	max-width: 1200px;
@@ -64,13 +71,12 @@ main
 	background-color: black;
 	}
 			
-img	
+.topimg	
 	{
 	max-width: 100%;
 	padding:10px;
 	border:solid;
 	}
-
 figure
 	{
 	width: 45%;
@@ -82,8 +88,23 @@ header
 		background-image: url("blahajpink.png");
 		height: 300px
 	}
-@media only screen and (max-width: 800px) {
+.buttons
+	{
+		display:flex;
+		padding: 20;
+		margin: 10;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		flex-grow: 0;
+		flex-shrink: 0;
+		max-width: 88px;
+		max-height: 36px;
 	
+	}
+
+@media only screen and (max-width: 800px) {
 
 	#sidenav
 	{
@@ -92,6 +113,9 @@ header
 		height: 100%;
 		position:relative;
 	}
+.core{
+	display:block;
+}
 #sidenav ul 
 	{
 		display:flex;
@@ -101,6 +125,8 @@ header
 		flex-grow: 1;
 		flex-shrink: 1;
 		border: 2px solid #BC13FE;
+		width: auto;
+		height: auto;
 
 
 	}
