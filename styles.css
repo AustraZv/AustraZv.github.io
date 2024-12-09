@@ -87,8 +87,8 @@ header
 .buttons
 	{
 		display:flex;
-		padding: 20;
-		margin: 10;
+		padding: 20px;
+		margin: 10px;
 		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: center;
