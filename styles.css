@@ -3,14 +3,23 @@
 	text-align: center;
 	background-color: #deacf1;
 	width: 100%;
+	color: black;
 }
 
+.maintext a{
+	color: #BC13FE;
+}
+
+.maintext a:hover{
+	background-color: #BC13FE;
+	color: black;
+}
 
 body
 	{
 	background-color: black;
 	background-image: url("background.gif");
-	color:green;
+	color:#4AF626;
 	font-family: 'Courier New', Courier, monospace;
 	}
 p
